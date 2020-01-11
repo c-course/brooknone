@@ -1,4 +1,8 @@
+void func();
+
 int main()
 {
-	return 1;
+    func();
+
+	return 0;
 }
