@@ -12,14 +12,14 @@ int main()
         printf("error creat");
     } else if (0 == fpid) {
         for (int i = 0; i < 3; i++) {
-            if (2 == i)
+            if (3 == i)
                 exit(0);
             printf("I am coming!%d\n", getpid());
-            sleep(1);
+            sleep(2);
         }
     } else {
         for (int i = 0; i < 3; i++) {
-            sleep(2);
+            sleep(1);
             printf("I am brook!%d\n", getppid());
         }
         xid = wait(&status);
